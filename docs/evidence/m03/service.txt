@@ -1,0 +1,21 @@
+● cc-m03.service - PTI 2802 M03 Flask Application
+     Loaded: loaded (/etc/systemd/system/cc-m03.service; enabled; preset: enabled)
+     Active: active (running) since Fri 2026-10-02 23:21:14 WIB; 33min ago
+   Main PID: 4116 (gunicorn)
+      Tasks: 3 (limit: 532)
+     Memory: 30.9M (peak: 31.4M)
+        CPU: 482ms
+     CGroup: /system.slice/cc-m03.service
+             ├─4116 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+             └─4117 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+
+Oct 02 23:28:29 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:28:29 +0700] "GET /health HTTP/1.1" 200 91 "http://65.52.163.162/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 02 23:28:32 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:28:32 +0700] "GET /api/info HTTP/1.1" 200 116 "http://65.52.163.162/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 02 23:30:21 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:30:21 +0700] "GET /health HTTP/1.1" 200 91 "-" "curl/8.21.0"
+Oct 02 23:30:50 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:30:50 +0700] "GET /api/info HTTP/1.1" 200 116 "http://65.52.163.162/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+Oct 02 23:35:12 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:35:12 +0700] "GET / HTTP/1.1" 200 784 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+Oct 02 23:35:14 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:35:14 +0700] "GET /favicon.ico HTTP/1.1" 404 207 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+Oct 02 23:35:26 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:35:26 +0700] "GET /app-ads.txt HTTP/1.1" 404 207 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+Oct 02 23:41:31 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:41:31 +0700] "GET / HTTP/1.1" 200 784 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+Oct 02 23:41:31 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:41:31 +0700] "GET /favicon.ico HTTP/1.1" 404 207 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+Oct 02 23:52:41 cc-m03-2583207073016 gunicorn[4117]: 127.0.0.1 - - [02/Oct/2026:23:52:41 +0700] "GET / HTTP/1.1" 200 784 "-" "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity"
