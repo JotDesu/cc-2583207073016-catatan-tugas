@@ -4,7 +4,7 @@ Cloud Computing — PTI 2802
 Pertemuan 3 — Project Inception
 
 ## Author
-(Andiana Jamaludin Malik / 2583207073016 / 2B)
+(Andiana Jamaludin Malik / 2583207073016 / PTI-2B)
 
 ## Problem
 Mahasiswa kesulitan memantau tenggat tugas dari berbagai mata kuliah
