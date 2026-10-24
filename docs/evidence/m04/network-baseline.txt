@@ -1,0 +1,25 @@
+=== ADDRESS ===
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UP             10.1.1.4/24 metric 100 fe80::72a8:a5ff:fe04:6a67/64 
+
+=== ROUTE ===
+default via 10.1.1.1 dev eth0 proto dhcp src 10.1.1.4 metric 100 
+10.1.1.0/24 dev eth0 proto kernel scope link src 10.1.1.4 metric 100 
+10.1.1.1 dev eth0 proto dhcp scope link src 10.1.1.4 metric 100 
+168.63.129.16 via 10.1.1.1 dev eth0 proto dhcp src 10.1.1.4 metric 100 
+169.254.169.254 via 10.1.1.1 dev eth0 proto dhcp src 10.1.1.4 metric 100 
+
+=== SOCKETS ===
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                       
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*    users:(("chronyd",pid=758,fd=6))                             
+udp   UNCONN 0      0         127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=495,fd=16))                    
+udp   UNCONN 0      0      127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=495,fd=14))                    
+udp   UNCONN 0      0      10.1.1.4%eth0:68        0.0.0.0:*    users:(("systemd-network",pid=628,fd=21))                    
+udp   UNCONN 0      0              [::1]:323          [::]:*    users:(("chronyd",pid=758,fd=7))                             
+tcp   LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=495,fd=15))                    
+tcp   LISTEN 0      2048       127.0.0.1:8000      0.0.0.0:*    users:(("gunicorn",pid=4117,fd=3),("gunicorn",pid=4116,fd=3))
+tcp   LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=995,fd=3),("systemd",pid=1,fd=131))       
+tcp   LISTEN 0      4096       127.0.0.1:2019      0.0.0.0:*    users:(("caddy",pid=3085,fd=8))                              
+tcp   LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=495,fd=17))                    
+tcp   LISTEN 0      4096               *:80              *:*    users:(("caddy",pid=3085,fd=3))                              
+tcp   LISTEN 0      4096            [::]:22           [::]:*    users:(("sshd",pid=995,fd=4),("systemd",pid=1,fd=132))       
