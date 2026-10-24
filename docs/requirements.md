@@ -1,20 +1,25 @@
 # Requirements
 
 ## Problem Statement
-Mahasiswa mengalami kesulitan memantau tenggat tugas dari berbagai
-mata kuliah karena informasi tersebar di banyak tempat.
+Pencatatan penjualan kedai kopi kecil masih dilakukan manual sehingga
+rekap harian lambat, rawan salah catat, dan pemilik tidak dapat memantau
+penjualan dari jarak jauh.
 
-Sistem menyediakan pencatatan tugas, mata kuliah, dan status
-pengerjaan sehingga tenggat dapat dipantau dari satu tempat.
+Sistem menyediakan kasir dan laporan penjualan berbasis web di cloud
+sehingga transaksi tercatat rapi dan dapat dipantau pemilik kapan saja.
 
 ## Target Users
-- Mahasiswa yang mengambil banyak mata kuliah dengan tugas berbeda-beda
+- Barista atau kasir kedai kopi
+- Pemilik kedai kopi
 
 ## Functional Requirements
 - FR-01 Sistem menampilkan halaman utama.
 - FR-02 Sistem menyediakan health endpoint.
 - FR-03 Sistem menampilkan metadata aplikasi.
-- FR-04 Sistem menampilkan daftar tugas dan mata kuliah (M05 dan seterusnya).
+- FR-04 Kasir dapat mencatat transaksi dari daftar menu (M05).
+- FR-05 Pemilik dapat mengelola menu dan harga (M05).
+- FR-06 Pemilik dapat melihat laporan penjualan harian (M05).
+- FR-07 Pemilik login sebelum mengakses dashboard (M10).
 
 ## Non-Functional Requirements
 - NFR-01 backend loopback-only

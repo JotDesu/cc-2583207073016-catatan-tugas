@@ -1,22 +1,29 @@
-# Student Task Tracker
+# BrewPoint: Aplikasi Kasir Web untuk Kedai Kopi dengan Dashboard Pemilik
 
 Cloud Computing — PTI 2802  
 Pertemuan 3 — Project Inception
 
 ## Author
-(Andiana Jamaludin Malik / 2583207073016 / PTI-2B)
+Andiana Jamaludin Malik / 2583207073016 / 2 B
 
 ## Problem
-Mahasiswa kesulitan memantau tenggat tugas dari berbagai mata kuliah
-karena informasi tersebar di banyak tempat.
+Pencatatan penjualan kedai kopi kecil masih dilakukan manual sehingga
+rekap harian lambat, rawan salah catat, dan pemilik tidak dapat memantau
+penjualan dari jarak jauh. (Bukti wawancara menyusul.)
 
 ## Target Users
-Mahasiswa yang mengambil banyak mata kuliah dengan tugas berbeda-beda.
+- Barista atau kasir kedai kopi
+- Pemilik kedai kopi
 
 ## Features M03
 - baseline application
 - health endpoint
 - VPS deployment
+
+## Planned Features
+- kasir web: daftar menu, keranjang, simpan transaksi
+- dashboard pemilik: laporan harian dan produk terlaris
+- kelola menu dan harga, login pemilik
 
 ## Architecture
 
@@ -28,6 +35,7 @@ flowchart LR
 ```
 
 ## Infrastructure
+- Microsoft Azure (Azure for Students), East Asia
 - Ubuntu Server 24.04
 - 1 vCPU
 - 1 GB RAM
